@@ -1,7 +1,23 @@
 aid: studio
+accessModel:
+  pricing: unknown
+  onboarding: unknown
+  trial: false
+  try_now: false
+  public: false
+  label: Unknown
+  confidence: low
+  source: []
+  generated: '2026-07-22'
+  method: derived
+image: https://kinlane-images.s3.amazonaws.com/shared/apis-json/icons/studio.png
 name: Studio
-description: 'Studio is a company surfaced as a portfolio company of gv and added to the API Evangelist
-  network as a stub for enrichment. Sector: consumer. This profile is a lead awaiting the enrichment pipeline.'
+description: 'Studio (formally Studio of America, Inc.) is a creative collective that develops
+  art through software, describing its mission as creating together, from and for the heart.
+  Surfaced as a portfolio company of GV in the consumer sector and added to the API Evangelist
+  network, the public site at s-tud.io is a static Gatsby marketing presence (Home, Beliefs,
+  and Team pages plus an audio player) and exposes no public API, SDK, developer portal,
+  documentation, or well-known discovery surface as of this enrichment pass.'
 url: https://raw.githubusercontent.com/api-evangelist/studio/refs/heads/main/apis.yml
 x-type: company
 x-source: vc-portfolio
@@ -11,10 +27,15 @@ x-tier: stub
 x-tier-reason: portfolio-lead
 specificationVersion: '0.20'
 created: '2026-07-17'
-modified: '2026-07-17'
+modified: '2026-07-21'
 tags:
 - Company
 - Consumer
+- Art
+- Creative
+- Software
+- Design
+- Media
 apis: []
 maintainers:
 - FN: Kin Lane
@@ -22,5 +43,12 @@ maintainers:
 - FN: APIs.json
   email: info@apis.io
 common:
+- type: DomainSecurity
+  url: security/studio-domain-security.yml
 - type: Website
-  url: s-tud.io
+  url: https://s-tud.io
+x-enrichment:
+  date: '2026-07-21'
+  status: minimal
+  artifacts_added: 1
+  pass: local-v1
